@@ -73,7 +73,7 @@ public class Menu {
 	}
     public static void sobre() {
         System.out.println(Cores.TEXT_CYAN + Cores.ANSI_BLACK_BACKGROUND+"╔════════════════════════════════════════════╗");
-        System.out.println("║       \"Projeto Desenvolvido por:           ║");
+        System.out.println("║         Projeto Desenvolvido por:          ║");
         System.out.println("║                                            ║");
         System.out.println("║   Iago Zandone - iagozandone@gmail.com     ║");
         System.out.println("║      https://github.com/iagozandone        ║");
