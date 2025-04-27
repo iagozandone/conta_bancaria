@@ -11,19 +11,23 @@ public class Menu {
 		
         Scanner leia = new Scanner(System.in);
 		
+        // Criar (instanciar) um objeto da Classe Conta
         Conta c1 = new Conta(1, 123, 1, "Iago", 500000);
-        
         c1.visualizar();
         
+        //Sacar
         c1.sacar(100);
         c1.visualizar();
         
+        //Depositar
         c1.depositar(1000);
         c1.visualizar();
         
-        
+        //Alterar a Propriedade titular
         c1.setTitular("Iago Zandone");
         c1.visualizar();
+        
+        
         
         while (true) {
 
