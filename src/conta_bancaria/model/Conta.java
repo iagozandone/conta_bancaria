@@ -96,7 +96,7 @@ public class Conta {
 		System.out.println("Tipo da conta: " + tipo);
 		System.out.println("Titular da Conta: " + this.titular);
 		System.out.println("Saldo da Conta: " + nfMoeda.format (this.saldo));
-		System.out.println("***********************************");
+		//System.out.println("***********************************");
 		
 	}
 	
