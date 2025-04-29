@@ -45,6 +45,8 @@ public class Menu {
         c2.sacar(1000);
         
         c2.visualizar();
+        c2.render();
+        c2.visualizar();
         
         
         while (true) {
