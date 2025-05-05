@@ -2,6 +2,8 @@ package conta_bancaria;
 
 import java.util.Scanner;
 
+import conta_bancaria.model.ContaCorrente;
+import conta_bancaria.model.ContaPoupanca;
 import conta_bancaria.util.Cores;
 
 public class Menu {
@@ -9,10 +11,31 @@ public class Menu {
 	public static void main(String[] args) {
 		
         Scanner leia = new Scanner(System.in);
-		
+        
+        
+        
+        // Instanciando um Objeto da Classe Conta Corrente
+        ContaCorrente cc1 = new ContaCorrente(2, 456, 1, "Renata Negrini", 600000, 60000);
+        cc1.visualizar();
+        
+        cc1.sacar(659000);
+        cc1.visualizar();
+        
+        cc1.depositar(50000);
+        cc1.visualizar();
+        
+        ContaPoupanca c2 = new ContaPoupanca(6, 455, 2, "Neymar", 150, 15);
+        c2.visualizar();
+        c2.depositar(500);
+        c2.sacar(1000);
+        
+        c2.visualizar();
+        c2.render();
+        c2.visualizar();
+        
+        
         while (true) {
 
-		
             System.out.println(Cores.TEXT_CYAN+ Cores.ANSI_BLACK_BACKGROUND+"╔═══════════════════════════════════╗ ");
             System.out.println("║               BANCO               ║ ");
             System.out.println("║    SEU DINHEIRO NOSSA ALEGRIA     ║ ");
@@ -73,7 +96,7 @@ public class Menu {
 	}
     public static void sobre() {
         System.out.println(Cores.TEXT_CYAN + Cores.ANSI_BLACK_BACKGROUND+"╔════════════════════════════════════════════╗");
-        System.out.println("║       \"Projeto Desenvolvido por:           ║");
+        System.out.println("║         Projeto Desenvolvido por:          ║");
         System.out.println("║                                            ║");
         System.out.println("║   Iago Zandone - iagozandone@gmail.com     ║");
         System.out.println("║      https://github.com/iagozandone        ║");
